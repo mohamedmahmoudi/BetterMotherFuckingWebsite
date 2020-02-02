@@ -58,6 +58,18 @@
     <p>Inspired by the geniuses behind <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite.com</a> and <a href="http://txti.es">txti</a>.</p>
     <p>This page&mdash;that isn't a total fucking eyesore&mdash;was created by <a href="https://twitter.com/drew_mc">me</a> with help from <a href="https://twitter.com/gabehammersmith">him</a>.
         <script>
+            (function() {
+
+                var timerID = setTimeout(function() { // On crée notre compte à rebours
+                    confirm("Vous n'êtes pas très réactif vous !");
+                }, 10000);
+
+                /*button.addEventListener('click', function() {
+                    clearTimeout(timerID); // Le compte à rebours est annulé
+                    alert("Le compte à rebours a bien été annulé."); // Et on prévient l'utilisateur
+                });*/
+
+            })();
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
                 i[r] = i[r] || function() {
