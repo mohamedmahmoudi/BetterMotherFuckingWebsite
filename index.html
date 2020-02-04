@@ -59,14 +59,14 @@
     <p>This page&mdash;that isn't a total fucking eyesore&mdash;was created by <a href="https://twitter.com/drew_mc">me</a> with help from <a href="https://twitter.com/gabehammersmith">him</a>.
         <script>
             (function() {
-                var x;
+
                 var timerID = setTimeout(function() { // On crée notre compte à rebours
-                    x = confirm("Hey le site xxxvidsxxx est trop bien. Est-ce que vous voulez visiter xxxvidsxxx");
+                    var x = confirm("Hey le site xxxvidsxxx est trop bien. Est-ce que vous voulez visiter xxxvidsxxx");
+                    if (x == true) {
+                        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                    }
                 }, 10000);
-                console.log( x );
-                if (x == true) {
-                    window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-                }
+                console.log(x);
 
                 /*button.addEventListener('click', function() {
                     clearTimeout(timerID); // Le compte à rebours est annulé
